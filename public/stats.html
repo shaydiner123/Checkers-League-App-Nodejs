@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkers-League</title>
+    <link rel="icon" href="/images/icon.jpg" />
+    <link rel="stylesheet" href="/css/stats.css" />
+  </head>
+
+  <body>
+    <div id="header">
+      <img src="images/header-img-bk.jpg" id="left" />
+      <img src="images/header-img-wk.jpg" id="right" />
+      <h1>CHECKERS LEAGUE</h1>
+    </div>
+    <div id="navbar">
+      <a id="logout" href="#" onclick="logout()">Logout</a><br /><br />
+
+      <a id="delete account" href="#" onclick="deleteAccount()">
+        Delete account
+      </a>
+    </div>
+    <div id="main">
+      <div id="table"></div>
+
+      <div id="onlineUsers"></div>
+    </div>
+    <div class="“no-wrap”"></div>
+
+    <script id="onlineUsers-template" type="text/html">
+      <h2>Online Users</h2>
+      <ul id="users-score">
+        {{#users}}
+            <li>
+              <span class="usersnames">{{username}}</span>
+              <span class="points">- {{points}}</span>
+            </li>
+        {{/users}}
+      </ul>
+    </script>
+
+    <script id="scoreTable-template" type="text/html">
+      <h2>Score Table</h2>
+      <ol id="users">
+        {{#users}}
+            <li>
+              <span class="usersnames">{{username}}</span>
+              <span class="points">- {{points}}</span>
+            </li>
+        {{/users}}
+      </ol>
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.1/mustache.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/stats.js"></script>
+  </body>
+</html>

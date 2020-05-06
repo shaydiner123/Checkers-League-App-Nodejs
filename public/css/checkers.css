@@ -1,0 +1,103 @@
+body {
+  background-color: cornflowerblue;
+  width: 100%;
+  font-size: 1em;
+}
+
+h1 {
+  font-size: 3em;
+  font-weight: bolder;
+  font-style: italic;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin: 1vh 35vw 0 35vw;
+}
+
+#board {
+  margin: 2vh 10vw 10vh 25vw;
+  width: 40vw;
+  height: 40vw;
+  border-style: solid;
+  float: left;
+}
+
+.cell {
+  width: 5vw;
+  height: 5vw;
+  float: left;
+}
+
+.white_cell {
+  background-color: #ffe4c4;
+}
+.black_cell {
+  background-color: #d2691e;
+}
+
+.no_wrap {
+  clear: both;
+}
+
+.checker {
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  margin: 8% auto 5% auto;
+  border: 0.2vw solid white;
+}
+
+.b_checker {
+  background-color: black;
+}
+
+.w_checker {
+  background-color: red;
+}
+
+.king {
+  width: 90%;
+  height: 90%;
+  padding: 0.4vh;
+}
+
+#current_turn_message {
+  font-size: 3em;
+  font-weight: bolder;
+  color: white;
+  display: inline;
+  padding: 0.5vw;
+  line-height: 42vh;
+  border: solid;
+  border-color: yellow;
+}
+
+.highlight {
+  background-color: yellow;
+}
+
+.rotated {
+  transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}
+
+#quit-game {
+  color: black;
+  font-weight: 700;
+  font-size: 2em;
+  border-style: solid;
+  border-width: 0.4vh;
+  padding: 0.2em;
+  background-color: limegreen;
+  display: inline;
+  cursor: pointer;
+}
+
+#win_message {
+  font-size: 4em;
+  position: absolute;
+  bottom: 45vh;
+  left: 25.5vw;
+  color: wheat;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkers-League</title>
+    <link rel="icon" href="/images/icon.jpg" />
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <h1 id="wellcome">Wellcome To Checkers League<span>!</span></h1>
+
+    <div class="centerd-form">
+      <div id="login">
+        <h1>Login</h1>
+        <form method="POST" action="/users/login">
+          Username:<input
+            name="username"
+            placeholder="Username"
+            required
+          /><br />
+          Password:<input
+            type="password"
+            name="password"
+            placeholder="Password"
+            required
+          /><br />
+          <button>Login</button>
+        </form>
+      </div>
+
+      <span>or</span>
+
+      <div id="signup">
+        <h1>Create new account</h1>
+        <form method="POST" action="/users">
+          Name:<input
+            type="text"
+            name="name"
+            placeholder="Name"
+            required
+          /><br />
+          Username:<input
+            type="text"
+            name="username"
+            placeholder="Username"
+            required
+          /><br />
+          Email:<input
+            type="email"
+            name="email"
+            placeholder="Email"
+            required
+          /><br />
+          Password:<input
+            type="password"
+            minlength="7"
+            name="password"
+            placeholder="Password"
+            required
+          /><br />
+          <button>Signup</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

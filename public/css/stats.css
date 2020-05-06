@@ -1,0 +1,87 @@
+body {
+  width: 100%;
+  font-size: 1em;
+  background-image: url("/images/cover.png");
+  background-size: cover;
+}
+
+ol {
+  color: darkred;
+}
+
+ul {
+  color: green;
+}
+
+li {
+  font-weight: 600;
+  font-size: 1.2em;
+}
+
+ul .usersnames {
+  cursor: pointer;
+}
+
+div#header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+}
+div#header h1 {
+  color: wheat;
+  font-weight: 800;
+  font-family: Verdana, Geneva;
+  font-size: 2em;
+  margin-left: 40%;
+}
+
+div#header img#left {
+  float: left;
+  width: 6%;
+}
+div#header img#right {
+  float: right;
+  width: 5%;
+}
+
+div#navbar {
+  margin-top: 15vh;
+  height: 10vh;
+}
+
+div#navbar a {
+  font-family: Arial;
+  font-size: 1.2em;
+  font-weight: 1000;
+  color: darkgoldenrod;
+  padding: 0.3vh;
+  margin: 1vh;
+  text-decoration: none;
+}
+
+div#main {
+  width: 90%;
+  margin: 0 auto 0 auto;
+  margin-top: 5vh;
+}
+
+div#table {
+  width: 62%;
+  float: right;
+}
+
+div#onlineUsers {
+  width: 29%;
+  float: left;
+}
+
+div#onlineUsers h2,
+div#table h2 {
+  text-decoration: underline;
+}
+
+no-wrap {
+  clear: both;
+}

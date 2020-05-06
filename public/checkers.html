@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Checkers Game</title>
+    <link rel="icon" href="/images/icon.jpg" />
+    <link rel="stylesheet" href="/css/checkers.css" />
+  </head>
+  <body>
+    <div id="players"></div>
+    <div id="board"></div>
+    <div id="current_turn_message" class="no_wrap"></div>
+    <div id="win_message"></div>
+    <br /><br />
+    <div id="quit-game"></div>
+
+    <script id="players-template" type="text/html">
+       <h1><span class="myName">{{myName}}</span>
+        <span class="vs">vs</span>
+       <span class="opponentName">{{opponentName}}</span>
+      </h1>
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.1/mustache.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.6.0/qs.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="/js/checkers-game/game/game.js"></script>
+    <script type="text/javascript" src="/js/checkers-game/game/piece.js"></script>
+    <script type="text/javascript" src="/js/checkers-game/game/king-piece.js"></script>
+    <script type="text/javascript" src="/js/checkers-game/game/move.js"></script>
+    <script type="text/javascript" src="/js/checkers-game/game/utils.js"></script>
+    <script type="text/javascript" src="/js/checkers-game/gameUI/gameUI.js"></script>
+    <script type="text/javascript" src="/js/checkers-game/game-manager.js"></script>
+
+    <script> new GameManager().runGame(); </script>
+
+  </body>
+</html>
