@@ -97,7 +97,6 @@ stats.on("connection", (socket) => {
     const user = removeUser(socket.id);
     console.log("User disconnected");
     if (user) {
-      console.log(user);
       const users = getOnlineUsers();
       stats.emit("updateLists", { users: getOnlineUsers() });
     }

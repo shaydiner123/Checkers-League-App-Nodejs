@@ -49,7 +49,6 @@ const updateTable = (gameResult, winnerName, loserName) => {
 const addUserToTable = ({ username }) => {
   const points = 0;
   table.push({ username, points });
-  console.log(table);
 };
 const removeUserFromTable = ({ username }) => {
   const index = table.findIndex((user) => {

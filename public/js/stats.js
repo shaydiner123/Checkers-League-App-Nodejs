@@ -65,7 +65,6 @@ socket.on("updateLists", (onlineUsers, tableUsers) => {
 });
 
 socket.on("game start request", (requesterName) => {
-  console.log("confirm");
   const isAccept = confirm(
     `${requesterName}  wants to start playing with you, please reply to him`
   );
