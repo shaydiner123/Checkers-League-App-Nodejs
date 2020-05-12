@@ -29,7 +29,7 @@ socket.on("error", (message) => {
   if (message == "Unauthorized") {
     location.href = "/";
   }
-  //other errors related to the game - the timeout makes the user first disconnect the games ns and only then connect to loby ns
+  //other errors related to the game - the timeout makes the user first disconnect the games ns and only then connect to stats ns
   else {
     setTimeout(() => {
       location.href = "/stats.html";
